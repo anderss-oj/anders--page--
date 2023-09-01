@@ -1,0 +1,42 @@
+:root {
+    background-color: aliceblue;
+}
+
+body { 
+    font-family: 'Helvetica';
+    padding: 10%; 
+    font-size: 90%;
+}
+
+ul {
+    list-style-type: armenian
+}
+
+p {
+    font-weight: light;
+    text-align: left;
+    text-indent: 3%;
+    text-rendering: optimizeLegibility;
+    margin: 30px;
+    padding: 5.2%;
+    font-family:'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif; 
+    font-size: large; color: rgb(88, 78, 18); 
+    background-color: rgba(120, 211, 182, 0.473);
+}
+
+.header {
+    font-style: italic;
+}
+
+.list {
+    font-size: large;
+}
+
+.section {
+    font-weight: bold;
+}
+
+#intro {
+    background-color: bisque;
+    border: 20px solid saddlebrown
+}

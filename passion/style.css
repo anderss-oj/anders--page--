@@ -1,0 +1,23 @@
+:root {
+    background-color: rgb(231, 180, 119);
+}
+
+.title {
+    font-family: 'Bauer Bodoni Std 1';
+}
+
+#Motorsport {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+#titleBlock {
+    margin-left: 10%;
+    
+}
+
+.series {
+    font-family: 'Century Gothic';
+    font-size: 40px;
+    font-weight: bold;
+}
