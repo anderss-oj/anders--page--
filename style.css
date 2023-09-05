@@ -10,3 +10,16 @@
     margin-bottom: 10px;
     margin-left: 1%;
 }
+
+.paragraph {
+    margin-left: 10%;
+    text-indent: 5%;
+}
+
+.entry {
+    margin: 2%;
+    border-style: dashed;
+    border-color: rgb(206, 129, 167);
+    border-radius: 10%;
+    padding: 1%;
+}
