@@ -1,0 +1,109 @@
+:root {
+    background-color: rgb(82, 53, 53);
+    color: antiquewhite;
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 10%;
+    background-color:rgb(46, 95, 72);
+    width: 300px;
+    height: 300px;
+}
+
+.box2 {
+    display: flex;
+    padding: 10%;
+    border-color: aquamarine;
+    border-style: double;
+    border-width: 20px;
+    background-color:rgb(7, 71, 41);
+}
+
+#smallBox2 {
+    border-color: blue;
+    background-color:rgb(37, 118, 138);
+}
+
+.header1 {
+    border-color: aquamarine;
+    border-style: double;
+    border-width: 6px;
+}
+
+p {
+    border-color: aquamarine;
+    border-style: double;
+    border-width: 6px;
+    margin: 10%;
+}
+
+.paragraph2 {
+    background-color: black;
+    height: 50%;
+    border-style: solid;
+    border-color: chocolate;
+    border-radius: 100%;
+}
+
+.border-box {
+    background-color: rgb(31, 70, 70);
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    border: 20px solid;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+#backHome {
+    margin: 5%;
+}
+
+.content-box {
+    background-color: rgb(31, 70, 70);
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    border: 20px solid;
+    margin: 20px;
+    box-sizing: content-box;
+}
+
+.margin {
+    margin: 1%;
+    border: 5px dashed;
+    text-align: center;
+    padding: 1%;
+    margin-top: 30px;
+}
+
+#border {
+    margin: 1%;
+    border: 6px solid;
+    background-color: cornflowerblue;
+}
+
+#padding {
+    margin: 1%;
+    border-width: 4px;
+    border-color: darkgoldenrod;
+    background-color: darkblue;
+}
+
+#content {
+    margin: 1%;
+    padding-bottom: 5%;
+    background-color: antiquewhite;
+    font-style: italic;
+    color: black;
+    border: 0;
+}
+
+.inline {
+    background-color: darkolivegreen;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid;
+}
