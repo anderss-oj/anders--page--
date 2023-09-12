@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(68, 98, 90);
+    background-color: rgb(244, 235, 223);
 }
 * {
     box-sizing: border-box;
@@ -17,8 +17,8 @@ p {
 .title {
     position: absolute;
     font-family: 'Akzidenz-Grotesk BQ Extra Conde';
-    color: white;
-    top: 60%;
+    color: rgb(95, 26, 26);
+    top: 10%;
     left: 2%;
     /* background-color: rgb(99, 99, 178); */
     padding: 0%;
