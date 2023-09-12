@@ -1,0 +1,160 @@
+:root {
+    background-color: rgb(68, 98, 90);
+}
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.home {
+    position: absolute;
+    top: 1%;
+}
+
+.title {
+    position: absolute;
+    font-family: 'Akzidenz-Grotesk BQ Extra Conde';
+    color: white;
+    top: 60%;
+    left: 2%;
+    /* background-color: rgb(99, 99, 178); */
+    padding: 0%;
+    margin: 0;
+}
+
+#Motorsport {
+    font-size: 8vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+#sub {
+    padding: 1vw;
+    margin: 0;
+    font-size: 2vw;
+}
+
+.VIR {
+    width: 40%;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 1%;
+    margin-left: 6%;
+}
+
+#trackMapNav {
+    position: absolute;
+    display: block;
+    width: 75%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: brown; */
+}
+
+.trackMapContainer {
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(182, 138, 72); */
+}
+
+.trackMap {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    /* background-color: rgb(213, 193, 163); */
+}
+
+.series {
+    font-family: 'Franklin Gothic';
+    font-weight: bold;
+    /* background-color: bisque; */
+    position: absolute;
+    width: 8vw;
+    height: auto;
+    border: 5px double rgb(111, 231, 199);
+    padding: 0%;
+    background-color: rgb(45, 132, 160);
+}
+
+.name {
+    font-size: 1vw;
+    position: relative;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+}
+
+.details {
+    font-size: 0.6vw;
+    font-weight: lighter;
+}
+
+.seriesPic {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0%;
+    padding-top: 2%;
+}
+
+#series1 {
+    top: 6%;
+    left: -9%;
+}
+
+#series2 {
+    top: 2%;
+    left: 38%;
+}
+
+#series3 {
+    top: 5%;
+    right: 31%;
+    min-width: 14%;
+}
+
+#series4 {
+    top: 13%;
+    right: 5%;
+}
+
+#series5 {
+    bottom: 30%;
+    right: -3%;
+}
+
+#series6 {
+    bottom: 4%;
+    right: 29%;
+    min-width: 14%;
+    z-index: 3;
+}
+
+#series7 {
+    bottom: 37%;
+    right: 23%;
+}
+
+#series8 {
+    top: 42%;
+    left: 29%;
+}
+
+#series9 {
+    top: 20%;
+    left: 6%;
+}
+
+#series10 {
+    top: 30%;
+    left: 45%;
+}
