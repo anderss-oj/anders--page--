@@ -41,15 +41,15 @@ p {
     /* background-color: brown; */
 }
 
-/* .trackMapContainer {
+.trackMapContainer {
     width: 75%;
     height: 75%;
-    background-color: rgb(182, 138, 72);
-} */
+    /* background-color: rgb(182, 138, 72); */
+}
 
 .trackMap {
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
     z-index: -1;
     /* background-color: rgb(213, 193, 163); */
@@ -102,6 +102,11 @@ p {
 }
 
 #series8 {
+    top: 20%;
+    left: 26%;
+}
+
+#series9 {
     top: 20%;
     left: 26%;
 }
