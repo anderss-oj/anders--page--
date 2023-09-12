@@ -14,7 +14,7 @@ p {
     font-family: 'Akzidenz-Grotesk BQ Extra Conde';
     top: 60%;
     left: 2%;
-    background-color: rgb(99, 99, 178);
+    /* background-color: rgb(99, 99, 178); */
     padding: 0%;
     margin: 0;
 }
@@ -43,7 +43,7 @@ p {
 
 .trackMapContainer {
     width: 75%;
-    height: 75%;
+    height: auto;
     /* background-color: rgb(182, 138, 72); */
 }
 
@@ -67,46 +67,46 @@ p {
 }
 
 #series1 {
-    top: 20%;
-    left: 20%;
+    top: 6%;
+    left: -4%;
 }
 
 #series2 {
-    top: 20%;
-    left: 26%;
+    top: 2%;
+    left: 29%;
 }
 
 #series3 {
-    top: 20%;
-    left: 20%;
+    top: 8%;
+    right: 47%;
 }
 
 #series4 {
     top: 20%;
-    left: 26%;
+    right: 32%;
 }
 
 #series5 {
-    top: 20%;
-    left: 20%;
+    bottom: 21%;
+    right: 33%;
 }
 
 #series6 {
-    top: 20%;
-    left: 26%;
+    bottom: 6%;
+    right: 47.5%;
 }
 
 #series7 {
-    top: 20%;
-    left: 20%;
+    bottom: 28%;
+    right: 57%;
 }
 
 #series8 {
-    top: 20%;
-    left: 26%;
+    top: 43%;
+    left: 25%;
 }
 
 #series9 {
     top: 20%;
-    left: 26%;
+    left: 10%;
 }
