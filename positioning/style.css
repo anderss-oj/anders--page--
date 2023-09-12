@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: darkolivegreen;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.center {
+    background-color:bisque;
+    max-width: 700px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.square {
+    background-color: hotpink;
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    margin: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+.relative {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    background-color: lightseagreen;
+    top: 65px;
+    z-index: 3; 
+    /* z index is for layering */
+    /* relative positions relatively to other items in genera; */
+}
+
+.inside {
+    width: 400px;
+    height: 135px;
+    border: 3px solid;
+    text-align: center;
+}
+
+.fixed {
+    background-color: palegoldenrod;
+    position: fixed;
+    
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    /* fixed positions to the viewport, and moves with scrolling */
+
+    /* USE THE ABOVE TO CENTER ITEM */
+
+    z-index: 4;
+}
+
+
+.container {
+    background-color: chocolate;
+    height: 300px;
+    width: 350px;
+    position: relative;
+}
+
+.absolute {
+    background-color: rgb(18, 207, 81);
+    position: absolute;
+    right: -80px;
+    border: 5px solid;
+    padding: 5px;
+    top:0;
+
+    /* absolute is mainly for positioning inside of other containers, but will position relative to the body if it is not inside of anything else */
+}
+
+.sticky {
+    background-color: darkgray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    /* this will scroll with the page once it is hit past. ex. top: 0; will stick to the top of page once it is scrolled past */
+}

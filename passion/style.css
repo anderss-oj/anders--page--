@@ -1,23 +1,107 @@
 :root {
-    background-color: rgb(231, 180, 119);
+    background-color: rgb(229, 248, 243);
+}
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
 }
 
 .title {
-    font-family: 'Bauer Bodoni Std 1';
+    position: absolute;
+    font-family: 'Akzidenz-Grotesk BQ Extra Conde';
+    top: 60%;
+    left: 2%;
+    background-color: rgb(99, 99, 178);
+    padding: 0%;
+    margin: 0;
 }
 
 #Motorsport {
-    font-size: 150px;
+    font-size: 160px;
     font-weight: bold;
+    margin: 0;
 }
 
-#titleBlock {
-    margin-left: 10%;
-    
+#sub {
+    padding: 20px;
+    margin: 0;
+}
+
+#trackMapNav {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    left: 67%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: brown; */
+}
+
+/* .trackMapContainer {
+    width: 75%;
+    height: 75%;
+    background-color: rgb(182, 138, 72);
+} */
+
+.trackMap {
+    display: block;
+    width: 80%;
+    height: auto;
+    z-index: -1;
+    /* background-color: rgb(213, 193, 163); */
 }
 
 .series {
     font-family: 'Century Gothic';
-    font-size: 40px;
     font-weight: bold;
+    background-color: bisque;
+    position: absolute;
+}
+
+.name {
+    font-size: medium;
+}
+
+#series1 {
+    top: 20%;
+    left: 20%;
+}
+
+#series2 {
+    top: 20%;
+    left: 26%;
+}
+
+#series3 {
+    top: 20%;
+    left: 20%;
+}
+
+#series4 {
+    top: 20%;
+    left: 26%;
+}
+
+#series5 {
+    top: 20%;
+    left: 20%;
+}
+
+#series6 {
+    top: 20%;
+    left: 26%;
+}
+
+#series7 {
+    top: 20%;
+    left: 20%;
+}
+
+#series8 {
+    top: 20%;
+    left: 26%;
 }
