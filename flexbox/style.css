@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(85, 131, 116);
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* this is horizontal spacing/alignment */
+    align-items: center;
+    /* this is like horizontal  */
+
+    /* align content is for organizing multiple lines */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.item {
+    background-color: rgb(223, 174, 115);
+    padding: 10px;
+    border: 2px solid;
+    width: 300px;
+
+    /* width setting pixel wise acts like a minimum width */
+    display: flex;
+
+
+}
+
+.special {
+    background-color: blue;
+    order: -1;
+}
