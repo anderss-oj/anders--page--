@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>structure</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="title">
+        places to go, specifically on my bike |
+    </div>
+    <div class="map">
+        <button class="topButton" id="back">
+            <a href="../index.html">backerooney</a>
+        </button>
+        <button class="topButton" id="reCenter" onclick="reCenter()">back2apartment</button>
+        <div class="listContainer">
+            <div class="location" id="start" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('apartmentPlace')">| apartment |</div>
+            <div class="location" id="belleIsle" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('belleIslePlace')">| belle isle |</div>
+            <div class="location" id="kroger" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('krogerPlace')">| kroger |</div>
+            <div class="location" id="pollak" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('pollakPlace')">| pollak |</div>
+            <div class="location" id="caryTown" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('carytownPlace')">| carytown |</div>
+            <div class="location" id="work" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('workPlace')">| work |</div>
+            <div class="location" id="doreyPark" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('doreyParkPlace')">| dorey park |</div>
+            <div class="location" id="willowLawn" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('willowLawnPlace')">| willow lawn |</div>
+            <div class="location" id="churchHill" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('churchHillPlace')">| church hill |</div>
+            <div class="location" id="somewhere" onmouseover="mouseOverNegative(this)" onmouseout="resetStyle(this)" onclick="moveToLocation('somewherePlace')">| somewhere else |</div>
+        </div>
+        <div class="placeContainer apartment" id="apartmentPlace">
+            <div class="location">apartment</div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer carytown" id="carytownPlace">
+            <div class="location">carytown
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer belleIsle" id="belleIslePlace">
+            <div class="location">belleIsle
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer kroger" id="krogerPlace">
+            <div class="location">kroger
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer pollak" id="pollakPlace">
+            <div class="location">pollak
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer work" id="workPlace">
+            <div class="location">work
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer doreyPark" id="doreyParkPlace">
+            <div class="location">dorey park
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer downtown" id="doreyParkPlace">
+            <div class="location">downtown
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+        <div class="placeContainer churchHill" id="churchHillPlace">
+            <div class="location">church hill
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+
+        <div class="placeContainer willowLawn" id="willowLawnPlace">
+            <div class="location">willow lawn
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+
+        <div class="placeContainer somewhere" id="somewherePlace">
+            <div class="location">somewhere else
+            </div>
+            <div><img class="bikeImg" src="images/bike.png"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+.topButton {
+    background-color: bisque 0;
+    z-index: 999999;
+    position: fixed;
+}
+
+#reCenter {
+    top: 5%;
+    left: 5%;
+}
+
+#back {
+    top: 3%;
+    left: 3%;
+}
+
+.map {
+    width: 200vw;
+    height: 200vh;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+
+.title {
+    position: absolute;
+    z-index: 40;
+    top: 4%;
+    right: -35%;
+    /* background-color: black;
+    color: white; */
+    border: 2px black solid;
+    font-size: 6vw;
+    width: 40vw;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(0, 0, 0) solid;
+    z-index: 20;
+}
+
+#start {
+    display: flex;
+    /* color: white;
+    background-color: rgb(91, 52, 124); */
+}
+
+.location {
+    font-size: 20px;
+}
+
+.placeContainer {
+    background-color: yellow;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.apartment {
+    bottom: 0%;
+}
+
+.carytown {
+    right: 70%;
+    bottom: 3%;
+}
+
+.belleIsle {
+    bottom: -70%;
+    right: 5%;
+}
+
+.doreyPark {
+    right: -95%;
+    bottom: -89%
+}
+
+.kroger {
+    right: 20%;
+    top: 30%;
+}
+
+.work {
+    right: -50%;
+    bottom: -65%;
+}
+
+.pollak {
+    right: 10%;
+    bottom: 16%;
+}
+
+.downtown {
+    right: -40%;
+    bottom: -25%;
+}
+
+.churchHill {
+    right: -50%;
+    bottom: -1%;
+}
+
+.willowLawn {
+    left: 10%;
+    top: 15%;
+}
+
+.somewhere {
+    right: -90%;
+    top: 10%;
+}
+
+.bikeImg {
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: auto;
+}
