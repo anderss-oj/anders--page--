@@ -17,16 +17,17 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    animation: skewImage infinite alternate ease-in-out 40s 20s;
 }
 
 /* vertical traffic */
 
 .trafficV {
-    background-color: rgb(22, 48, 39);
-    width: 200vw;
+    background-color: rgb(255, 221, 0);
+    width: 300vw;
     height: 200vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     animation: trafficV 20s infinite ease-in-out alternate
 }
 
@@ -45,7 +46,7 @@ body {
 .lane {
     width: 10vh;
     height: 200vh;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(255, 255, 255);
     /* z-index: 10; */
     /* animation: trafficUp1 8s infinite alternate ease-in-out -500ms; */
     top: -8vw;
@@ -86,7 +87,7 @@ body {
     height: 200vh;
     /* background-color: brown; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     animation: carSpace1 5.5s infinite alternate ease-in-out;
 }
@@ -135,7 +136,7 @@ body {
 .whiteLines {
     width: 1.5vh;
     height: 10vh;
-    background-color: antiquewhite;
+    background-color: rgb(255, 238, 0);
 }
 
 @keyframes whiteLines {
@@ -152,4 +153,141 @@ body {
     width: 100%;
     height: 10%;
     background-color: rgb(0, 0, 0);
+}
+
+/* horizontal */
+
+.trafficH {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(65, 130, 107); */
+    width: 200vw;
+    height: 200vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    animation: trafficV 20s infinite ease-in-out alternate
+}
+
+@keyframes trafficH{
+    0% {
+        transform: translate(-20vw, -100vh);
+    }
+    
+    100% {
+        transform: translate(20vw, 0vh);
+    }
+}
+
+/* horizontal lanes */
+
+.laneH {
+    width: 400vh;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    /* z-index: 10; */
+    /* animation: trafficUp1 8s infinite alternate ease-in-out -500ms; */
+    top: -8vw;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+/* horizontal white lines */
+
+.whiteLineLaneH {
+    width: 300vh;
+    height: 1.5vh;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* animation: whiteLinesH 10s infinite alternate linear; */
+}
+
+.whiteLinesH {
+    width: 10vh;
+    height: 1.5vh;
+    background-color: rgb(255, 238, 0);
+}
+
+@keyframes whiteLinesH {
+    0% {
+        transform: translateX(-100vh);
+    }
+    100% {
+        transform: translateX(0vh);
+    }
+}
+
+/* horizontal car lanes */
+
+.carInsideH {
+    width: 200vh;
+    height: 5vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    animation: carSpace1H 5.5s infinite alternate ease-in-out;
+}
+
+.rightH {
+    /* background-color: rgb(239, 104, 104); */
+    animation: carSpace2H 4s infinite alternate ease-in-out;
+}
+
+@keyframes carSpace1H {
+    0% {
+        transform: translateX(-103vh);
+    }    
+    50% {
+        transform: translateX(20vh);
+    }
+    100% {
+        transform: translateX(103vh);
+    }
+}
+
+@keyframes carSpace2H {
+    0% {
+        transform: translateX(103vh);
+    }    
+    50% {
+        transform: translateX(60vh);
+    }
+    100% {
+        transform: translateX(-103vh);
+    }
+}
+
+.carInsideInsideH {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(118, 161, 183);
+}
+
+@keyframes skewImage {
+    0% {
+        transform: skewX(0);
+    }
+    100% {
+        transform: skewX(8deg);
+    }
+}
+
+@keyframes scaleH {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(90%);
+    }
+}
+
+.guyInBlockH {
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
 }
