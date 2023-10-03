@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.home {
+    position: absolute;
+    top: 1%;
+}
+
+.box {
+    /* background-color: lightslategray; */
+    width: 300px;
+    height: 300px;
+    /* animation-name: life; */
+    /* animation-duration: 3s; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: linear; */
+    /* animation-fill-mode: forwards, backwards, both; */
+
+    animation: life 3s infinite alternate linear
+}
+
+@keyframes life {
+    0% {
+        background-color: lightslategray;
+    }
+    100% {
+        background-color: aquamarine;
+    }
+    /* 100% {
+        background-color: lightslategray;
+    } */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    background-color: aquamarine;
+    animation: pulse 1s infinite alternate ease;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: aquamarine;
+        /* width: 20vw; */
+        /* height: 20vw; */
+        scale: 0.3;
+    }
+    100% {
+        background-color: slategray;
+        /* width: 25vw; */
+        /* height: 25vw; */
+        scale: 2;
+    }
+}
+
+.square {
+    width: 20vw;
+    height: 20vw;
+    background-color: aquamarine;
+    animation: spin 5s normal infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        background-color: aquamarine;
+        rotate: 0deg;
+        border-radius: 0;
+    }
+    50% { 
+        background-color: rgb(16, 43, 66);   
+        rotate: 180deg;
+        border-radius: 100%;
+    }
+    100% {
+        background-color: aquamarine;
+        rotate: 360deg;
+        border-radius: 0;
+    }
+}
+
+.mover {
+    position: fixed;
+    /* background-color: rgb(50, 110, 50);
+    width: 10vw;
+    height: 1.3vw; */
+    left: 0;
+    bottom: 0;
+    animation: move 6s infinite linear
+}
+
+.mover-shape {
+    animation: grow 3s infinite alternate;
+    background-color: rgb(50, 110, 50);
+    width: 10vw;
+    height: 1.3vw;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-10vw);
+        /* transform:skewY(0); */
+    }
+    /* 50% {
+        transform: translateX(30vw);
+    } */
+    100% {
+        /* transform:skewY(20deg); */
+        transform: translate(100vw, 0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 5;
+    }
+    100% {
+        scale: 2;
+    }
+}
+
+/* @keyframes move {
+    0% {
+        transform: translate(0vw, 0) rotate(0);
+        transform:skewY(0);
+    }
+    50% {
+        transform: translateX(30vw);
+    }
+    55% {
+        transform: translate(35vw,-35vw) rotate(-90deg);
+    }
+    100% {
+        transform:skewY(20deg);
+        transform: translate(30vw, -100vw) rotate(-90deg);
+    }
+} */
