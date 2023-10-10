@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.featuredImg {
+    width: 100%;
+    max-width: 600px;
+}
+
+p {
+    background-color: rgb(121, 173, 156);
+    padding: 30px;
+    max-width: 600px;
+    /* useful for an 'ideal' size, but compatible with smaller, adjusting accordingly */
+}
