@@ -29,12 +29,15 @@ const range1 = {minWidth: 600, maxWidth: 800, minHeight: 600, maxHeight: 800};
 const range2 = {minWidth: 740, maxWidth: 890, minHeight: 600, maxHeight: 1000};
 const range3 = {minWidth: 680, maxWidth: 932, minHeight: 712, maxHeight: 862};
 const range4 = {minWidth: 1200, maxWidth: 1550, minHeight: 803, maxHeight: 1050};
+const range5 = {minWidth: 1362, maxWidth: 1485, minHeight: 810, maxHeight: 890};
+const range6 = {minWidth: 946, maxWidth: 1030, minHeight: 886, maxHeight: 1033};
+const range7 = {minWidth: 1406, maxWidth: 1592, minHeight: 786, maxHeight: 999};
+const range8 = {minWidth: 1101, maxWidth: 1265, minHeight: 698, maxHeight: 1060};
+const range9 = {minWidth: 1500, maxWidth: 1800, minHeight: 990, maxHeight: 1080};
 
 function audioResize() {
     // log window size everytime function is run
-    const windowWidth = window.innerWidth;  
-    const windowHeight = window.innerHeight;
-    console.log (windowWidth+' x '+windowHeight)
+    console.log (window.innerWidth+' x '+window.innerHeight)
     // playing ranges for each sound
     playAudio(audio1, range1, audio1Active);
     playAudio(audio2, range2, audio2Active);
@@ -48,20 +51,28 @@ function audioResize() {
 }
 
 function playAudio(audio, range, audioActive) {
+    // check window size everytime function is run
     const windowWidth = window.innerWidth;  
     const windowHeight = window.innerHeight;
-    console.log (windowWidth+' x '+windowHeight)
 
+    // check ranges
     if (rangeCheck(windowWidth, range.minWidth, range.maxWidth) && rangeCheck(windowHeight, range.minHeight, range.maxHeight)) {
-        if (!audio) {
+        if (!audioActive) {
             audio.play();
             audioActive = true;
+            console.log ('playing something now');
         }
         else {
             audio.pause();
             audioActive = false;
+            // console.log ('paused '+audio+' now');
         }
     }
+    else {
+        audio.pause();
+        audioActive = false;
+    }
+    
 }
 
 function rangeCheck(value, min, max) {
