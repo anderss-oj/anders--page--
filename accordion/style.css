@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    z-index: 20;
+}
+
+img {
+    max-width: 100%;
+}
+
+.featuredImg {
+    max-width: 100%;
+}
+
+.sound1 {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+}
+
+.soundsActive {
+    position: fixed;
+    bottom: 0.5vw;
+    right: .5vw;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: black 2px solid;
+    /* background-color: aquamarine; */
+    padding: 10px;
+}
+
+.soundsRow {
+    display: flex;
+    justify-content: space-evenly;
+    border: black 1px solid;
+    /* margin-top: 1px; */
+}
+
+.sound {
+    background-color: 0;
+    transition: background-color, 2s;
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) and (max-width: 800px) and (max-height: 800px){
+    /* .sound1 {
+        position: fixed;
+        top: 90vh;
+        left: 90vw;
+    } */
+    .A1 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (min-width: 740px) and (min-height: 600px) and (max-width: 890px) and (max-height: 1000px){
+    .A2 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (min-width: 680px) and (min-height: 712px) and (max-width: 932px) and (max-height: 862px){
+    .A3 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 803px) and (max-width: 1550px) and (max-height: 1050px){
+    .A4 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) and (max-width: 800px) and (max-height: 800px){
+    .A5 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (max-width: 1030) and (max-height: 680px){
+    .A6 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (max-width: 1180px) and (max-height: 651px){
+    .A7 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (max-width: 1330px) and (max-height: 934px){
+    .A8 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
+
+@media screen and (max-width: 1400px) and (max-height: 998px){
+    .A9 {
+        background-color: yellow;
+        transition: background-color, 2s;
+    }
+}
