@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+/* img {
+    max-width: 100%;
+}
+
+.featuredImg {
+    max-width: 100%;
+} */
+
+body {
+    background-color: rgb(185, 180, 101);
+    transition: background-color .5s;
+}
+
+.dark {
+    background-color: rgb(53, 50, 29);
+}
+
+.bg {
+    background-image: url('images/1998fordTaurus.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.transparent {
+    opacity: 1;
+}
+
+.sidebar {
+    padding: 20px;
+    background-color: slategray;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    text-align: center;
+    transition: right .5s;
+}
+
+.active {
+    right: 0;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: slategrey;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    transform: rotate(0deg);
+    transition: all .5s
+    
+}
+
+.spin {
+    transform: rotate(-180deg);
+    background-color: bisque;
+}
