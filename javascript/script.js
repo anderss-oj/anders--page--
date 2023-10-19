@@ -6,5 +6,5 @@ function change() {
     menu.classList.toggle("active");
     spinner.classList.toggle("spin");
     document.body.classList.toggle("dark");
-    backgroundImage.classList.toggle("transparent")
+    backgroundImage.classList.toggle("transparent");
 }
