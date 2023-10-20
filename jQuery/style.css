@@ -2,10 +2,99 @@
     box-sizing: border-box;
 }
 
-img {
+/* img {
     max-width: 100%;
 }
 
 .featuredImg {
     max-width: 100%;
+} */
+
+body {
+    background-color: rgb(100, 149, 237);
+    transition: background-color .3s;
+}
+
+body.dark {
+    background-color: rgb(30, 30, 75);
+}
+
+.darkBtn {
+    z-index: 100;
+}
+
+.flex {
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 157, 50);
+    transition: background-color .3s, box-shadow .3s ease-in;
+    animation: spin 3.4s linear infinite;
+    animation-play-state: paused;
+
+}
+
+.box.dark{
+    background-color: rgb(150, 95, 28);
+}
+
+
+.box.glow {
+    background-color: rgb(255, 209, 152);
+    box-shadow: 0 0 15px 10px rgb(255, 209, 152);
+}
+
+.box.dark.glow {
+    background-color: rgb(187, 145, 93);
+    box-shadow: 0 0 15px 10px rgb(187, 145, 93);
+}
+
+.box.spin {
+    animation-play-state: running;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.people {
+    width: 300px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.people.reveal {
+    opacity: 100%;
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.revealBtn {
+    opacity: 100%;
+    transition: opacity 0.7s;
+}
+
+.revealBtn.none {
+    opacity: 0;
 }
