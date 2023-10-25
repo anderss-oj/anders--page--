@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100;300;400&family=Squada+One&display=swap');
+
+@import url("https://use.typekit.net/qsz8qkr.css");
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* we can change the settings for this in the webfontkit folder where the font is located */
+@font-face {
+    font-family: 'akzidenz-grotesk_bqMdCnalt'; 
+    
+    /* we can name this whatever */
+    src: url('akzidenzgrotesk-mediumcondalt-webfont.woff2') format('woff2'), 
+    
+    url('akzidenzgrotesk-mediumcondalt-webfont.woff') format('woff');
+
+    /* these are the sources, also possibly we can include the backup files like ttf */
+    font-weight: normal;
+    font-style: condensed;
+
+    /* again these are the ways in which we will reference this specific font */
+}
+
+/* img {
+    max-width: 100%;
+}
+
+.featuredImg {
+    max-width: 100%;
+} */
+
+p {
+    margin: 5%;
+    text-indent: 5%;
+}
+
+.defaults {
+    font-family: askdfbask, 'Consolas', monospace;
+    /* optimal, fall-back that more people would have, default browser */
+}
+
+.google {
+    font-family: 'Handjet', sans-serif;
+    font-size: 3vh;
+    font-weight: 100;
+    font-style: italic;
+    /* font weight uses closest font weight available*/
+    background-color: black;
+    color: white;
+}
+
+.new {
+    font-family: 'Squada One', sans-serif;
+    font-style: normal;
+}
+
+.adobe {
+    font-family: "gabriella", sans-serif;
+font-weight: 900;
+font-style: normal;
+}
+
+/* we got the: 
+    .ttf + .otf
+    and the
+    .woff and woff2
+
+    woff and woff2 are 'for web' font formats
+
+    font squirrel has a webfont generator!
+*/
+
+.squirrel {
+    font-family: 'akzidenz-grotesk_bqMdCnalt', sans-serif;
+    font-size: 2vh;
+}

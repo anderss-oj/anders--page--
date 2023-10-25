@@ -20,6 +20,6 @@ p {
     margin: 2%;
     border-style: dashed;
     border-color: rgb(206, 129, 167);
-    border-radius: 10%;
+    border-radius: 100%;
     padding: 1%;
 }
