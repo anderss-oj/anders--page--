@@ -64,8 +64,14 @@ $(function() {
     }
   });
   $('.doorHandle').click(function(){
-    $(this).html('shit, the door handle broke...')
+    $(this).html('shit, the door handle broke...');
     document.getElementById('wompAudio').play();
+    $('.otherDoorHandle').addClass('doorHandleShow');
+  })
+  $('.otherDoorHandle').click(function(){
+    $(this).html('this door handle broke too, stupid dumb car.');
+    document.getElementById('wompAudio').play();
+    $('.sadness').addClass('sadnessShow');
   }) 
 });
 

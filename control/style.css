@@ -194,3 +194,33 @@ body {
     left: 47%;
     background-color: rgb(71, 224, 57);
 }
+
+.otherDoorHandle {
+    opacity: 0;
+    position: relative;
+    top: 20%;
+    right: -96%;
+    width: 120px;
+    height:100px;
+    background-color: rgb(209, 193, 121);
+    transition: opacity, 1s 3s;
+}
+
+.doorHandleShow {
+    opacity: 1
+}
+
+.sadness {
+    opacity: 0;
+    position: relative;
+    top: 19%;
+    left: 45%;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(234, 228, 200);
+    transition: opacity, 1s 3s;
+}
+
+.sadnessShow {
+    opacity: 1
+}
