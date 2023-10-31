@@ -17,7 +17,7 @@ $(function() {
       "ui-droppable-hover": "ui-state-hover"
     },
     drop: function( event, ui ) {
-      $('.title').html('you go! go unlock that door!');
+      $('.title').html('you go! go to that 2005 Ford Taurus!');
       $('.taurusExt').addClass('taurusShow');
     },
     out: function(event, ui) {
@@ -44,10 +44,11 @@ $(function() {
   $('.ignition').droppable({
     drop: function(event, ui) {
       $('#keyImg').css('display', 'none');
-      $(this).html("silly goose! it's a 2005 Ford Tarus, of course it doesn't work!");
+      $(this).html("silly goose! it's a 2005 Ford Taurus, of course it doesn't start!");
+      document.getElementById('wompAudio').play();
     }
   });
-  var playing = false
+  var playing = false;
   $('.radio').click(function() {
     if (playing == false) {
       delilahAudio.play();
@@ -61,7 +62,11 @@ $(function() {
       console.log('its not playing');
       // $('.radio').html('radio');
     }
-  }); 
+  });
+  $('.doorHandle').click(function(){
+    $(this).html('shit, the door handle broke...')
+    document.getElementById('wompAudio').play();
+  }) 
 });
 
 
