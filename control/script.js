@@ -5,7 +5,7 @@ $("#answerNo").hover(function(){
 });
 
 $(".answer").click(function(){
-    window.location.href="keyGrab.html";
+    window.location.href="/keyGrab.html";
 });
 
 // page 2 function
