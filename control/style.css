@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-/* img {
+img {
     max-width: 100%;
 }
 
-.featuredImg {
+/* .featuredImg {
     max-width: 100%;
 } */
 
@@ -17,16 +17,32 @@
     z-index: 20;
 }
 
-.title1Box {
+body {
+    margin: 0;
+}
+
+.pageBox {
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
-.title1 {
+.taurusExt {
+    opacity: 0;
+    width: 30vh;
+    height: 20vh;
+    transition: opacity, 2s 1s;
+}
+
+.taurusShow {
+    opacity: 1;
+}
+
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +51,16 @@
     width: 30vh;
     height: 20vh;
     padding: 2vh;
+    font-family: 'Baskerville Std', Times, serif;
+}
+
+.t2 {
+    align-items: center;
+    transition: opacity, 1s;
+}
+
+.t3 {
+    opacity: 1;
 }
 
 .question1 {
@@ -72,8 +98,99 @@
     background-color: orange;
 }
 
-.nah2 {
+.nah2 { 
     
     background-color: rgb(92, 215, 92);
     transition: background-color 0.5s 0.5s;
+}
+
+.key {
+    position: fixed;
+    width: 7vh;
+    z-index: 40;
+}
+
+#keyImg {
+    transform: rotate(180deg);
+}
+
+.keyInPocket {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.pocket {
+    background-color: rgb(0, 0, 0);
+    /* border: 1px black solid; */
+    position: fixed;
+    width: 20vh;
+    height: 15vh;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    font-family: 'Baskerville Std', Times, serif;
+    font-size: 2vh;
+    color: white;
+}
+
+.pocketHighlighted {
+    color: black;
+    background-color: white;
+}
+
+.interiorCenterer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.interiorBg {
+    /* display: block; */
+    background-image: url(images/2005fordTaurusInt.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 1200px;
+    height: 800px;
+}
+
+.interiorTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    font-family: 'Baskerville Std', Times, serif;
+}
+
+.ignition {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: aliceblue;
+    width: 150px;
+    height: 100px;
+}
+
+.doorHandle {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-color: rgb(209, 193, 121);
+}
+
+.radio {
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    background-color: rgb(71, 224, 57);
 }
