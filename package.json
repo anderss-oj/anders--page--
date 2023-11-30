@@ -7,5 +7,15 @@
   },
   "devDependencies": {
     "vite": "^4.5.0"
-  }
+  },
+  "name": "anders--page--",
+  "description": "handmade web class packages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/anderss-oj/anders--page--",
+  "author": "Anders Jensen",
+  "license": "ISC"
 }
