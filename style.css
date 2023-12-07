@@ -23,3 +23,8 @@ p {
     border-radius: 100%;
     padding: 1%;
 }
+
+.final {
+    color: darkolivegreen;
+    background-color: greenyellow;
+}
